@@ -1,0 +1,45 @@
+{
+  "name": "rax-lazyload",
+  "version": "0.0.1",
+  "description": "Lazyload your components, images or anything where performance matters.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src/ --out-dir lib/",
+    "lint": "eslint -c .eslintrc src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qq1353709/rax-lazyload.git"
+  },
+  "keywords": [
+    "rax-component",
+    "rax",
+    "lazyload"
+  ],
+  "author": "dydong <qq1353709@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qq1353709/rax-lazyload/issues"
+  },
+  "homepage": "https://github.com/qq1353709/rax-lazyload",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^7.1.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "prop-types": "^15.5.6",
+    "puppeteer": "^2.1.1",
+    "rax": "^1.0.0",
+    "rax-find-dom-node": "^1.0.1",
+    "rax-view": "^1.1.0"
+  }
+}
