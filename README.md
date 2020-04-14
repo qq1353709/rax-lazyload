@@ -5,11 +5,11 @@ This project is now currently maintained by
 
 ----
 
-# react-lazyload [![Build Status](https://travis-ci.org/twobin/react-lazyload.svg)](https://travis-ci.org/twobin/react-lazyload) [![npm version](https://badge.fury.io/js/react-lazyload.svg)](http://badge.fury.io/js/react-lazyload) [![Coverage Status](https://coveralls.io/repos/github/jasonslyvia/react-lazyload/badge.svg?branch=master)](https://coveralls.io/github/jasonslyvia/react-lazyload?branch=master) [![npm downloads](https://img.shields.io/npm/dm/react-lazyload.svg)](https://www.npmjs.com/package/react-lazyload)
+# react-lazyload
 
 Lazyload your Components, Images or anything matters the performance.
 
-[Demo](//twobin.github.io/react-lazyload/examples/)
+[Demo](https://twobin.github.io/react-lazyload/examples/)
 
 ## Why it's better
 
@@ -25,15 +25,14 @@ Lazyload your Components, Images or anything matters the performance.
 > 2.0.0 is finally out, read [Upgrade Guide](https://github.com/twobin/react-lazyload/wiki/Upgrade-Guide), it's almost painless to upgrade!
 
 ```
-$ npm install --save react-lazyload
+$ npm install --save rax-lazyload
 ```
 
 ## Usage
 
 ```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import LazyLoad from 'react-lazyload';
+import { createElement, render } from 'rax';
+import LazyLoad from 'rax-lazyload';
 import MyComponent from './MyComponent';
 
 const App = () => {
@@ -65,25 +64,7 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.body);
-```
-
-If you want to have your component lazyloaded by default, try this handy decorator:
-
-```javascript
-import { lazyload } from 'react-lazyload';
-
-@lazyload({
-  height: 200,
-  once: true,
-  offset: 100
-})
-class MyComponent extends React.Component {
-  render() {
-    return <div>this component is lazyloaded by default!</div>;
-  }
-}
-```
+render(<App />, document.body);
 
 ## Special Tips
 
@@ -193,7 +174,7 @@ It is available to manually trigger checking for elements in viewport. Helpful w
 Import `forceCheck`:
 
 ```javascript
-import { forceCheck } from 'react-lazyload';
+import { forceCheck } from 'rax-lazyload';
 ```
 
 Then call the function:
@@ -207,7 +188,7 @@ forceCheck();
 Forces the component to display regardless of whether the element is visible in the viewport.
 
 ```javascript
-import { forceVisible } from 'react-lazyload';
+import { forceVisible } from 'rax-lazyload';
 ```
 
 Then call the function:
@@ -219,7 +200,6 @@ forceVisible();
 ## Scripts
 
 ```
-$ npm run demo:watch
 $ npm run build
 ```
 
